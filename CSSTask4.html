@@ -1,65 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task9</title>
+    <title>CSS TASK 4</title>
     <style>
-        h1{
-            text-align: center;
+        #mySidenav a {
+          position: absolute;
+          left: -80px;
+          transition: 0.5s;
+          padding: 15px;
+          width: 100px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+          border-radius: 0 5px 5px 0;
         }
-        ul,li {
-            margin: 0;
-            list-style: none;
-            margin-top: auto;
-            padding: 0;
-            padding-bottom: 50px;
-            width: 50px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            margin-bottom: 10px;
-            transition: trasform 0.3s, width 0.3s ease-in-out;
-            cursor: pointer;
+        
+        #mySidenav a:hover {
+          left: 0;
         }
-        li span{
-            position: absolute;
-            opacity: 0;
-            padding: 5px;
-            font-size: large;
-            white-space:nowrap;
-            transition: opacity 0.3s;
-            color: black;
+        
+        #home {
+          top: 20px;
+          background-color: #04AA6D;
         }
-        li:hover span{
-            opacity: 1;
+        
+        #java {
+          top: 80px;
+          background-color: #2196F3;
         }
-        li:hover{
-            width: 80px;
-            transform: translateX(10px);
-            opacity: 0.9; 
+        
+        #html {
+          top: 140px;
+          background-color: #f44336;
         }
-        .sidenavbar{
-            float: left;
+        
+        #css {
+          top: 200px;
+          background-color: #555
         }
 
-    </style>
+        .second{
+            margin-left: 80px;
+        }
+        </style>
 </head>
-
 <body>
-    <h1>Hoverable Side Nav Buttons</h1>
-    <div class="container"> </div>
-    <div>
-        <nav class="sidenavbar">
-        <ul>
-            <li style="background-color: #04A96D
-"><a href="index.html"><span>Home</span></a></li>
-            <li style="background-color: #3399FF"><a href="index.html"><span>Java</span></a></li>
-            <li style="background-color:#FF3333;"><a href="index.html"><span>CSS</span></a></li>
-            <li style="background-color: rgb(71, 74, 73);"><a href="index.html"><span>BootStrap</span></a></li>
-        </ul>
-    </nav>
-    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="home">Home</a>
+        <a href="#" id="java">Java</a>
+        <a href="#" id="html">HTML</a>
+        <a href="#" id="css">CSS</a>
+      </div>
+      
+      <div class="second">
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+      </div>  
 </body>
-
 </html>
