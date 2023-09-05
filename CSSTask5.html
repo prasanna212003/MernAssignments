@@ -1,62 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS-5</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TASK 5</title>
     <style>
-        .container{
-            background-color:rgb(215, 218, 32);
-            border: 1px solid;
-            display: inline-block;
-        }
-        nav{
-            display: inline-block;
-            vertical-align: top;
-            padding: 10px;
-        }
-        .x{
-            display: inline-block;
-            vertical-align: top;
-        }
-        nav li{
-            list-style-type: none;
-            margin-bottom:2px ;
-            background-color: white;
-            border-right:10px solid black;
-            color: blue;
-            padding-right: 10px;
-        }
-        nav li:hover{
-            color:purple
-        }
-        .x h1,p{
-            color: purple;
-        }
+      div.container {
+        display: flex;
+        justify-content: space-between;
+        width: 32%;
+        margin: 0 auto;
+        padding-top: 100px;
+        text-align: left;
+        padding: 2em;
+        padding-top: 10px;
+        padding-right:10px;
+        padding-bottom: 200px; /* Add padding to extend the square slightly down */
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: purple;
+        background-color: #d8da3d;
+        border-top: 1px dotted purple;
+        border-left: 1px dotted purple;
+        border-right: 1px dotted purple;
+      }
+
+      ul.navbar {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+        margin-top: 30px;
+        text-align: left; /* Align list items to the left */
+        width: 14em;
+      }
+      h1 {
+        font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+      }
+      ul.navbar li {
+        background: white;
+        margin: 0.5em 0;
+        padding: 0.3em;
+        border-right: 1em solid black;
+      }
+      ul.navbar a {
+        text-decoration: none;
+      }
+      a:visited{
+        color:blue;
+      }
+      a:hover {
+        color: purple;
+      }
+      address {
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: thin dotted;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav>
-            <li>Home page</li>
-            <li>Musings</li>
-            <li>My town</li>
-            <li>Links</li>
-        </nav>
-        <div class="x">
-            <h1>My first styled page</h1>
-            <p>Welcome to my styled page!</p>
-            <p>It lacks images, but atleast it has style. And it as links,even
-                if they dontgo anywhere...
-            </p>
-            <p>
-                There should me more here, but I don't know what yet.
-            </p>
-            <hr style="color: purple;">
-            <p><i>Made 5 April 2004 <br> by myself</p>
-        </div>
+      <ul class="navbar">
+        <li><a href="">Home page</a></li>
+        <li><a href="">Musings</a></li>
+        <li><a href="">My town</a></li>
+        <li><a href="">Links</a></li>
+      </ul>
+
+      <div class="content">
+        <h1>My first styled page</h1>
+
+        <p>Welcome to my styled page!</p>
+
+        <p>
+          It lacks images, but at least it has style. And it has links, even if
+          they don't go anywhere&hellip;
+        </p>
+
+        <p>There should be more here, but I don't know what yet.</p>
+
+        <address>
+          Made 5 April 2004<br />
+          by myself.
+        </address>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-
-
