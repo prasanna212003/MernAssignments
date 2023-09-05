@@ -1,89 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS TASK 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      div.container {
-        display: flex;
-        justify-content: space-between;
-        width: 32%;
-        margin: 0 auto;
-        padding-top: 100px;
-        text-align: left;
-        padding: 2em;
-        padding-top: 10px;
-        padding-right:10px;
-        padding-bottom: 200px; /* Add padding to extend the square slightly down */
-        font-family: Georgia, "Times New Roman", Times, serif;
-        color: purple;
-        background-color: #d8da3d;
-        border-top: 1px dotted purple;
-        border-left: 1px dotted purple;
-        border-right: 1px dotted purple;
+      body {
+        font-family: Arial, Helvetica, sans-serif;
       }
 
-      ul.navbar {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        margin-right: 20px;
-        margin-top: 30px;
-        text-align: left; /* Align list items to the left */
-        width: 14em;
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
       }
-      h1 {
-        font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+
+      button {
+        background-color: #04aa6d;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
       }
-      ul.navbar li {
-        background: white;
-        margin: 0.5em 0;
-        padding: 0.3em;
-        border-right: 1em solid black;
+
+      button:hover {
+        opacity: 0.8;
       }
-      ul.navbar a {
-        text-decoration: none;
+
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
       }
-      a:visited{
-        color:blue;
+
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
       }
-      a:hover {
-        color: purple;
+
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
       }
-      address {
-        margin-top: 1em;
-        padding-top: 1em;
-        border-top: thin dotted;
+
+      .container {
+        padding: 16px;
+      }
+
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 3% auto 3% auto;
+        border: 1px solid #888;
+        width: 40%;
+      }
+
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: red;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <ul class="navbar">
-        <li><a href="">Home page</a></li>
-        <li><a href="">Musings</a></li>
-        <li><a href="">My town</a></li>
-        <li><a href="">Links</a></li>
-      </ul>
+    <div id="id01" class="modal">
+      <form class="modal-content animate">
+        <div class="imgcontainer">
+          <span class="close" title="Close Modal">&times;</span>
+          <img src="C:\Users\laksh\Downloads\img_avatar2.png
+          " alt="Avatar" class="avatar" />
+        </div>
 
-      <div class="content">
-        <h1>My first styled page</h1>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
 
-        <p>Welcome to my styled page!</p>
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
 
-        <p>
-          It lacks images, but at least it has style. And it has links, even if
-          they don't go anywhere&hellip;
-        </p>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
 
-        <p>There should be more here, but I don't know what yet.</p>
-
-        <address>
-          Made 5 April 2004<br />
-          by myself.
-        </address>
-      </div>
+        <div class="container" style="background-color: #f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
     </div>
   </body>
 </html>
