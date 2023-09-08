@@ -1,88 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <title>CSS-Task2</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TASK 2</title>
     <style>
-        .ul1{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .ul1 li{
-            background-color:  #add9e6;
-            padding: 10px;
-        }
-        .ul1 li:hover{
-            background-color:rgb(255, 183, 3);
-            color: white;
-        }
-        .nav1{
-            border: 1px solid;
-            width:max-content;
-            padding: 10px;
-        }
-        .nav2{
-            border: 1px solid;
-            width: fit-content;
-            padding: 10px;
-            display: inline-block;
-        }
-        .ul2{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .ul2 li{
-            float: left;
-            padding: 10px;
-            background-color: rgb(204, 204, 204);
-            color: blue;
-        }
-        .ul2 li:hover{
-            background-color: grey;
-            color: white;
-        }
-        div{
-            display: inline-block;
-        }
-        .ul2 li:not(
-            :last-child
-        ){
-            border-right: 1px solid blue;
-        }
+      .horizontal_nav {
+        border: 1px solid black;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        padding-right: 0px;
+        overflow: hidden;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .inner_container1 {
+        background-color: #d3d3d3;
+        width: 100%;
+      }
+
+      #horizontal {
+        text-align: center;
+      }
+
+      #java1,
+      #html1,
+      #css1 {
+        float: left;
+        background-color: transparent;
+        color: blue;
+        padding: 10px;
+        border-left: 1px solid blue;
+      }
+
+      #home1 {
+        float: left;
+        background-color: transparent;
+        color: blue;
+        padding: 10px;
+      }
+
+      #css1 {
+        border-right: 1px solid blue;
+      }
+
+      #home1:hover,
+      #java1:hover,
+      #html1:hover,
+      #css1:hover {
+        background-color: grey;
+        color: white;
+      }
+
+      .vertical_nav {
+        border: 1px solid black;
+        padding: 10px 8px 0px 5px;
+        margin-right: auto;
+        margin-left: 200px;
+        float: left;
+      }
+
+      .inner_container2 {
+        background-color: #add9e6;
+      }
+
+      #vertical {
+        text-align: left;
+        margin-left: 220px;
+      }
+
+      #home2,
+      #java2,
+      #html2,
+      #css2,
+      #bootstrap2 {
+        padding: 10px;
+        color: blue;
+        width: 50%;
+      }
+
+      #home2:hover,
+      #java2:hover,
+      #html2:hover,
+      #css2:hover,
+      #bootstrap2:hover {
+        background-color: orange;
+        color: white;
+      }
     </style>
-</head>
-<body>
-    <div>
-    <h3>Vertical navigation bar</h3>
-    <nav class="nav1">
-        <ul class="ul1">
-            <li>
-                Home
-            </li>
-            <li>
-                Java
-            </li>
-            <li>
-                CSS
-            </li>
-            <li>
-                HTML
-            </li>
-            <li>Bootstrap</li>
-        </ul>
-    </nav>
+  </head>
+  <body>
+    <h5 id="vertical">Vertical Navigation Bar</h5>
+    <div class="vertical_nav">
+      <div class="inner_container2">
+        <table>
+          <tr>
+            <td id="home2">Home</td>
+          </tr>
+          <tr>
+            <td id="java2">Java</td>
+          </tr>
+          <tr>
+            <td id="html2">HTML</td>
+          </tr>
+          <tr>
+            <td id="css2">CSS</td>
+          </tr>
+          <tr>
+            <td id="bootstrap2">Bootstrap</td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <div>
-    <h3>Horizontal navigation bar</h3>
-    <nav class="nav2">
-        <ul class="ul2">
-            <li>Home</li>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    </nav>
+    <h5 id="horizontal">Horizontal Navigation Bar</h5>
+    <div class="horizontal_nav">
+      <div class="inner_container1">
+        <table>
+          <tr>
+            <td id="home1">Home</td>
+            <td id="java1">Java</td>
+            <td id="html1">HTML</td>
+            <td id="css1">CSS</td>
+          </tr>
+        </table>
+      </div>
     </div>
-</body>
+  </body>
 </html>
