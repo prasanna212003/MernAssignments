@@ -1,51 +1,62 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-    </head>
-    <body>
-        <form>
-            <center>
-            <table>
-                
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML TASK 4</title>
+    <style>
+      table{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <form>
         <tr>
-        <td><label for="Fn">Full Name: </label></td>
-       <td> <input type="text" name="fn" /></td>
-       </tr>
-       <tr>
-        <td><label for="un">Username: </label></td>
-       <td> <input type="text" name="un" /></td>
-       </tr>
-       <tr>
-        <td><label for="pd">Password: </label></td>
-       <td> <input type="Password" name="pd" /></td>
-       </tr>
-       <tr>
-        <td><label for="rpd">Re Password: </label></td>
-       <td> <input type="Password" name="rpd" /></td>
-       </tr>
-       <tr>
-        <td><label for="ad">Address: </label></td>
-       <td> <input type="text" name="ad" /></td>
-       </tr>
-       <tr>
-        <td><label for="ag">Age: </label></td>
-       <td> <input type="age" name="ag" /></td>
-       </tr>
-      
-       <tr>
-    <td><label> Gender:</label></td>
-      <td> <select>
-            <option>Male</option>
-            <option>Female</option>
-            
-            <tr>
-                <td>
-                    <input type="button" value="Save" />
-                    
-                </td></tr>
-        </table>
-          
-    </center>
-</form>
-    </body></html>
+          <td><label for="fullname">Full Name:</label></td>
+          <td><input type="text" id="fullname" name="fullname"  placeholder="Vincent Maverick Durano"/><br /></td>
+        </tr>
+        <tr>
+          <td><label for="username">Username:</label></td>
+          <td><input type="text" id="username" name="username" placeholder="Vinz"/><br /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password" /><br /></td>
+        </tr>
+        <tr>
+          <td><label for="repassword">Re Password:</label></td>
+          <td>
+            <input type="password" id="repassword" name="repassword" /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><input type="text" id="address" name="address" placeholder="Cebu, Phillippines"/><br /></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td><input type="number" id="age" name="age" placeholder="22"/><br /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            <select id="cars" name="cars">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="save" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
+
