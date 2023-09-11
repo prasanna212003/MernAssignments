@@ -1,137 +1,136 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Task5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
     <style>
-      
-        table {
+        /* h2{
+            color: blue;
+            text-align: center;
+        }
+        th{
+            
+            text-align: center;
+        }
+        td{
+            float: left;
+        }
+        div{
+            margin:0 auto;
+        }
+        table,tr,th{
+            margin: 0 auto;
+            border: 1px solid;
             border-collapse: collapse;
-            width: 50%;
-        }
+        } */
 
-        table, th, td {
-            border: 1px solid black;
+        h2 {
+            color: blue;
+            text-align: center;
         }
-
-        .form-input {
+        th, td {
+            text-align: center;
+        }
+        td input[type="text"],
+        td input[type="email"],
+        td input[type="password"],
+        td input[type="number"],
+        td textarea,
+        td select {
             width: 100%;
-            padding: 5px;
             box-sizing: border-box;
         }
-
-        label {
-            display: block;
+        div {
+            margin: 0 auto;
+            width: 70%;
         }
-
-        .checkbox-group label {
+        table {
+            margin: 0 auto;
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr, th, td {
+            border: 1px solid;
+        }
+        td label {
             display: inline-block;
-            margin-right: 10px;
         }
-
-        .login-link {
+        .btn {
+            margin: 10px 50%;
+        }
+        .left {
+            text-align: left;
+        }
+        .right {
             text-align: right;
-            margin-top: 10px;
-        }
-
-        .login-link a {
-            color: blue;
-            text-decoration: underline;
-        }
-      h1 {
-            color: blue; /* Make the title blue */
         }
     </style>
 </head>
-
 <body>
-  <center>
-    <h1>Registration Form</h1>
-
-    <form >
-        <table>
-            <tr>
-              <td><b>First Name</td>
-                <td><input type="text" name="full_name" class="form-input" required></td>
-            </tr>
-              <tr>
-                <td><b>Last Name</td>
-                <td><input type="text" name="full_name" class="form-input" required></td>
-            </tr>
-            <tr>
-                <td><b>Email</td>
-                <td><input type="email" name="email" class="form-input" required></td>
-            </tr>
-            <tr>
-                <td><b>Password</td>
-                <td><input type="password" name="password" class="form-input" required></td>
-            </tr>
-            <tr>
-                <td><b>Re-enter Password</td>
-                <td><input type="password" name="re_password" class="form-input" required></td>
-            </tr>
-            <tr>
-                <td><b>Gender:</td>
-                <td>
-                    <label><input type="radio" name="gender" value="Male"> Male</label><hr>
-                    <label><input type="radio" name="gender" value="Female"> Female</label><br>
-                </td>
-            </tr>
-            <tr>
-                <td><b>Age:</td>
-                <td><input type="number" name="age" class="form-input" required></td>
-            </tr>
-            <tr>
-                <td><b>Phone Number</td>
-                <td><input type="tel" name="phone_number" class="form-input" required></td>
-            </tr>
-            <tr>
-                <td><b>Address</td>
-                <td><textarea name="address" class="form-input" required></textarea></td>
-            </tr>
-            <tr>
-                <td><b>State</td>
-                <td><input type="text" name="state" class="form-input" required></td>
-            </tr>
-            <tr>
-                <td id="i1"><b>Country</td>
-                <td>
-                    <select name="country" class="form-input" required>
-                        <option value="" disabled selected>Choose your country</option>
-                        <option value="USA">USA</option>
-                        <option value="Canada">Canada</option>
-                        <option value="UK">UK</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><b>Languages known</td>
-                <td>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" name="languages[]" value="English"> English</label>
-                        <label><input type="checkbox" name="languages[]" value="Kannada"> Kannada</label>
-                        <label><input type="checkbox" name="languages[]" value="Hindi"> Hindi</label>
-                        <label><input type="checkbox" name="languages[]" value="Telugu"> Telugu</label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-        <label style="border: none;"></label>
-        <td style="border:none"><input type="checkbox">Hereby I declare all the details given are true</td>
-    </tr>
-            <tr>
-                <td colspan="2" class="login-link">
-                Log in to <a href="https://www.ethnus.com" style="color: blue;">Ethnus</a> Website
-                </td>
-            </tr>
-        </table>
-
-        <br>
-
-        <input type="submit" value="Register">
-    </form>
-          </center>
+    <h2>Registration form</h2>
+    <div>
+    <form>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <th>Re enter password</th>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td style="text-align: left;"><input type="radio" value="Male" id="m">Male<hr>
+            <input type="radio" value="female" id="fe">Female</td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <th>Phone Number:</th>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><textarea id="address"></textarea></td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td><select>
+                <option selected disabled>Choose your country</option>
+                <option>India</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>Languages Known</th>
+            <td style="text-align: left;"><input type="checkbox" id="eng">English
+                <input type="checkbox" id="kan">Kannada
+                <input type="checkbox" id="hin">Hindi
+                <input type="checkbox" id="tel">Telugu</td>
+        </tr>
+        <tr ><td colspan="2" class="left"><input type="checkbox"> Hereby I declare all the given details are true</td></tr>
+        <tr><td colspan="2" class="right">Login to <a href="ethnus.com">Ethnus</a>website</td></tr>
+    </table>
+    <input type="submit" value="Register" class="btn"></form></div>
 </body>
-
 </html>
